@@ -7,9 +7,10 @@ import Contact from "./components/Contact/Contact.vue";
 import HomePage from "./components/HomePage.vue";
 import Test from "./components/test.vue";
 import  More from "./components/More.vue";
-
+import { publicPath } from "../vue.config";
 export default new Router({
   mode: "history",
+  base: publicPath,
   routes: [
     {
       path: "/",

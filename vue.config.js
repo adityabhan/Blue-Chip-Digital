@@ -1,4 +1,4 @@
 module.exports = {
-    lintOnSave: false
-    // publicPath : '/BlueChipDigital/'
+    lintOnSave: false,
+    publicPath : '/Blue-Chip-Digital/'
 }

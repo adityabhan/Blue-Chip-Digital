@@ -40,7 +40,6 @@
         :src="amazon"
         v-b-toggle.collapse-1
         fluid
-        :click="registerContent('Amazon is a tech giant')"
       ></b-img>
       <b-img
         class="image-icon"
@@ -49,7 +48,6 @@
         v-b-popover.hover.bottomleft="'I am popover content!'"
         title="Popover Title"
         fluid
-        :onclick="registerContent('Microsoft is a OS giant')"
       ></b-img>
 
       <b-img
@@ -57,14 +55,12 @@
         :src="intel"
         v-b-toggle.collapse-1
         fluid
-        :onclick="registerContent('Intel rocks with their processors!')"
       ></b-img>
       <b-img
         class="image-icon"
         :src="flipkart"
         v-b-toggle.collapse-1
         fluid
-        :onclick="registerContent('Flipkat is owned by Walmart.')"
       ></b-img>
 
       <!-- <b-button v-b-toggle.collapse-1 variant="primary">A</b-button>
@@ -85,7 +81,7 @@ export default {
   name: "ExistingCustomers",
   data() {
     return {
-      collapseContent: "",
+      collapseContent: "Default content and can be modified. ",
       amazon: require("../../assets/customers/amazon.jpg"),
       microsoft: require("../../assets/customers/microsoft.jpg"),
       intel: require("../../assets/customers/intel.png"),
